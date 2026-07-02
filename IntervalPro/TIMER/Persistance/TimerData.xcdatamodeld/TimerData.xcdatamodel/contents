@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="FolderItems" representedClassName="FolderItems" syncable="YES" codeGenerationType="class">
+        <attribute name="alertSong" optional="YES" attributeType="String"/>
+        <attribute name="colour" optional="YES" attributeType="String"/>
+        <attribute name="session" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="shuffle" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="viibrateAlert" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="inetervalToFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="toFolderItems" inverseEntity="Item"/>
+    </entity>
+    <entity name="IntervalCalls" representedClassName="IntervalCalls" syncable="YES" codeGenerationType="class">
+        <attribute name="averageNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="maxNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="minNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="random" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="inetrvalItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IntervalItem" inverseName="intervalCall" inverseEntity="IntervalItem"/>
+    </entity>
+    <entity name="IntervalDuration" representedClassName="IntervalDuration" syncable="YES" codeGenerationType="class">
+        <attribute name="max" optional="YES" attributeType="String"/>
+        <attribute name="min" optional="YES" attributeType="String"/>
+        <attribute name="random" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="restTime" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="IntervalItem" representedClassName="IntervalItem" syncable="YES" codeGenerationType="class">
+        <attribute name="halfWayAlert" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="intervalColour" optional="YES" attributeType="String"/>
+        <attribute name="intervalName" optional="YES" attributeType="String"/>
+        <relationship name="intervalCall" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IntervalCalls" inverseName="inetrvalItem" inverseEntity="IntervalCalls"/>
+        <relationship name="intervalDuration" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IntervalDuration"/>
+        <relationship name="messageItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MessageItems"/>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
+        <attribute name="alertSong" optional="YES" attributeType="String"/>
+        <attribute name="colour" optional="YES" attributeType="String"/>
+        <attribute name="indexValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="session" optional="YES" attributeType="String"/>
+        <attribute name="shuffle" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="viibrateAlert" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="intervalDuration" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IntervalDuration"/>
+        <relationship name="intervalItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IntervalItem"/>
+        <relationship name="restBetweenInterval" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IntervalDuration"/>
+        <relationship name="restBetweenRounds" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RestBetweenRounds"/>
+        <relationship name="toFolderItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FolderItems" inverseName="inetervalToFolder" inverseEntity="FolderItems"/>
+    </entity>
+    <entity name="MessageItems" representedClassName="MessageItems" syncable="YES" codeGenerationType="class">
+        <attribute name="delay" optional="YES" attributeType="String"/>
+        <attribute name="messageName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="RestBetweenRounds" representedClassName="RestBetweenRounds" syncable="YES" codeGenerationType="class">
+        <attribute name="max" optional="YES" attributeType="String"/>
+        <attribute name="min" optional="YES" attributeType="String"/>
+        <attribute name="random" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="restTime" optional="YES" attributeType="String"/>
+        <attribute name="rounds" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+</model>

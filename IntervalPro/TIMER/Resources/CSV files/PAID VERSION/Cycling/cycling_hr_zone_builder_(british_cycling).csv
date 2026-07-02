@@ -1,0 +1,8 @@
+TimerName,TimerColour,Alert,Vibration,IntervalShuffle,ReactionSessionRound,ReactionSessionRoundHundredths,ReactionIntervalDurationMin,ReactionIntervalDurationMinHundredths,ReactionIntervalDurationMax,ReactionIntervalDurationMaxHundredths,RestBetweenIntervalsMin,RestBetweenIntervalsMinHundredths,RestBetweenIntervalsMax,RestBetweenIntervalsMaxHundredths,NumberOfRounds,RestBetweenRoundsMin,RestBetweenRoundsMinHundredths,RestBetweenRoundsMax,RestBetweenRoundsMaxHundredths,CallName,CallColour,ReactionMaxNumberOfCalls,CallDurationMin,CallDurationMinHundredths,CallDurationMax,CallDurationMaxHundredths,HalfWayAlert,MessageText,MessageDelay,MessageDelayHundredths
+HR Zone Builder [British Cycling],#FBEB67,Four Beeps (Default),,FALSE,,,,,,,,,,,1,,,,,[Warmup] Heart Rate Z1,#DBDBDB,,0:10:00,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Heart Rate Z2,#1886EC,,0:20:00,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Heart Rate Z3,#148B76,,0:05:00,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Heart Rate Z1,#DBDBDB,,0:05:00,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Heart Rate Z2,#1886EC,,0:05:00,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Heart Rate Z3,#148B76,,0:05:00,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Cool Down,#1886EC,,0:10:00,,,,FALSE,,,

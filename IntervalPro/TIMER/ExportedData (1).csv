@@ -1,0 +1,2 @@
+Title,Type,Alert Song,Index Value,Is Child,Is Selected,Session,Shuffle,Vibrate Alert,Item Color Hex,Item Color Alpha,Interval Name,Interval Color Hex,Interval Color Alpha,Interval Duration,Interval Max,Interval Random,Message Name,Message Delay
+Timer 1,Timer,No Audio,0,FALSE,TRUE,Defaults Beeps,FALSE,FALSE,#FF3B30,1.0,I1,#FF3B30,1.0,25:06,27:00,TRUE

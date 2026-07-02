@@ -1,0 +1,12 @@
+TimerName,TimerColour,Alert,Vibration,IntervalShuffle,ReactionSessionRound,ReactionSessionRoundHundredths,ReactionIntervalDurationMin,ReactionIntervalDurationMinHundredths,ReactionIntervalDurationMax,ReactionIntervalDurationMaxHundredths,RestBetweenIntervalsMin,RestBetweenIntervalsMinHundredths,RestBetweenIntervalsMax,RestBetweenIntervalsMaxHundredths,NumberOfRounds,RestBetweenRoundsMin,RestBetweenRoundsMinHundredths,RestBetweenRoundsMax,RestBetweenRoundsMaxHundredths,CallName,CallColour,ReactionMaxNumberOfCalls,CallDurationMin,CallDurationMinHundredths,CallDurationMax,CallDurationMaxHundredths,HalfWayAlert,MessageText,MessageDelay,MessageDelayHundredths
+Short Circuit (Circuit),#D89371,Four Beeps (Default),,FALSE,,,,,,,,,,,4,,,,,Split Jumps w/Kettle Bell Drop,#8B1414,,0:01:00,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Transition,#FA4C4C,,0:00:10,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Explosive Sit-Up to Toe Tap,#4CFAD0,,0:01:00,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Transition,#FA4C4C,,0:00:10,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Skater Jumps,#FA4C4C,,0:01:00,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Burpees,#A24343,,0:01:00,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Transition,#FA4C4C,,0:00:10,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Medicine Ball Slam + Vertical Jump,#8B1414,,0:01:00,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Transition,#FA4C4C,,0:00:10,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Plank Jack Squat Thrust,#4CFAD0,,0:01:00,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Rest,#148B76,,0:02:00,,,,FALSE,,,

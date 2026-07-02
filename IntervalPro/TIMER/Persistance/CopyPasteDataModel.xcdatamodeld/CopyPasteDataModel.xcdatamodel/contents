@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="ColorObject" representedClassName="ColorObject" syncable="YES" codeGenerationType="class">
+        <attribute name="alphaValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="colorChoice" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="colorHexCode" optional="YES" attributeType="String"/>
+        <attribute name="colorOpacityX" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="colorOpacityY" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="colorRgbX" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="colorRgbY" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="colorShadesX" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="colorShadesY" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="indexValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Entity" representedClassName="Entity" syncable="YES" codeGenerationType="class"/>
+    <entity name="FolderItems" representedClassName="FolderItems" syncable="YES" codeGenerationType="class">
+        <attribute name="alertSong" optional="YES" attributeType="String"/>
+        <attribute name="colorOpacity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="colorOpacityX" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="colorOpacityY" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="colorRgbX" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="colorRgbY" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="colorShadesX" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="colorShadesY" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="colour" optional="YES" attributeType="String"/>
+        <attribute name="indexValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="session" optional="YES" attributeType="String"/>
+        <attribute name="shuffle" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="viibrateAlert" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="inetervalToFolder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item"/>
+        <relationship name="intervalDuration" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IntervalDuration"/>
+        <relationship name="intervalItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IntervalItem"/>
+        <relationship name="restBetweenInterval" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IntervalDuration"/>
+        <relationship name="restBetweenRounds" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RestBetweenRounds"/>
+    </entity>
+    <entity name="IntervalCalls" representedClassName="IntervalCalls" syncable="YES" codeGenerationType="class">
+        <attribute name="averageNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="maxNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="random" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="inetrvalItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IntervalItem"/>
+    </entity>
+    <entity name="IntervalDuration" representedClassName="IntervalDuration" syncable="YES" codeGenerationType="class">
+        <attribute name="max" optional="YES" attributeType="String"/>
+        <attribute name="min" optional="YES" attributeType="String"/>
+        <attribute name="random" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="restTime" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="IntervalItem" representedClassName="IntervalItem" syncable="YES" codeGenerationType="class">
+        <attribute name="halfWayAlert" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="indexValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="intervalName" optional="YES" attributeType="String"/>
+        <attribute name="isSelected" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <relationship name="colorObject" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ColorObject"/>
+        <relationship name="intervalCall" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IntervalCalls"/>
+        <relationship name="intervalDuration" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IntervalDuration"/>
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item"/>
+        <relationship name="messageItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MessageItems"/>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
+        <attribute name="alertSong" optional="YES" attributeType="String"/>
+        <attribute name="indexValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isChild" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isSelected" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="noteBox" optional="YES" attributeType="String"/>
+        <attribute name="session" optional="YES" attributeType="String"/>
+        <attribute name="shuffle" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="viibrateAlert" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Item"/>
+        <relationship name="colorObject" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ColorObject"/>
+        <relationship name="intervalDuration" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IntervalDuration"/>
+        <relationship name="intervalItem" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="IntervalItem"/>
+        <relationship name="restBetweenInterval" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IntervalDuration"/>
+        <relationship name="restBetweenRounds" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RestBetweenRounds"/>
+        <relationship name="setting" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Settings"/>
+        <relationship name="toFolderItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FolderItems"/>
+    </entity>
+    <entity name="MessageItems" representedClassName="MessageItems" syncable="YES" codeGenerationType="class">
+        <attribute name="delay" optional="YES" attributeType="String"/>
+        <attribute name="indexValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isSelected" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="messageName" optional="YES" attributeType="String"/>
+        <relationship name="messages" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IntervalItem"/>
+    </entity>
+    <entity name="RestBetweenRounds" representedClassName="RestBetweenRounds" syncable="YES" codeGenerationType="class">
+        <attribute name="max" optional="YES" attributeType="String"/>
+        <attribute name="min" optional="YES" attributeType="String"/>
+        <attribute name="random" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="restTime" optional="YES" attributeType="String"/>
+        <attribute name="rounds" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Settings" representedClassName="Settings" syncable="YES" codeGenerationType="class">
+        <attribute name="audio" optional="YES" attributeType="String"/>
+        <attribute name="isNoAudio" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isTextToSpeech" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isVibration" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="textToSpeech" optional="YES" attributeType="String"/>
+        <attribute name="vibration" optional="YES" attributeType="String"/>
+    </entity>
+</model>

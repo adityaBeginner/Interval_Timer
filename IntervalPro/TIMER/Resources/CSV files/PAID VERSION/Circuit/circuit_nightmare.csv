@@ -1,0 +1,13 @@
+TimerName,TimerColour,Alert,Vibration,IntervalShuffle,ReactionSessionRound,ReactionSessionRoundHundredths,ReactionIntervalDurationMin,ReactionIntervalDurationMinHundredths,ReactionIntervalDurationMax,ReactionIntervalDurationMaxHundredths,RestBetweenIntervalsMin,RestBetweenIntervalsMinHundredths,RestBetweenIntervalsMax,RestBetweenIntervalsMaxHundredths,NumberOfRounds,RestBetweenRoundsMin,RestBetweenRoundsMinHundredths,RestBetweenRoundsMax,RestBetweenRoundsMaxHundredths,CallName,CallColour,ReactionMaxNumberOfCalls,CallDurationMin,CallDurationMinHundredths,CallDurationMax,CallDurationMaxHundredths,HalfWayAlert,MessageText,MessageDelay,MessageDelayHundredths
+Nightmare (Circuit),#D89371,Four Beeps (Default),,FALSE,0:15:00,,0:00:45,,0:02:00,,,,,,4,0:01:30,,,,Lunges,#148B76,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Burpees,#8B1414,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Skipping,#FA4C4C,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Dead Hang,#FAE84C,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Push Ups,#4CFAD0,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Pull Ups,#49148B,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Jumping Split Squat,#1886EC,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Mountain Climbers,#FF7418,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Crunches/Core,#A2F3F4,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Lateral  Raises,#DA6245,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Bicep Curls,#7DDD0D,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Tricep Dips,#004F03,,,,,,FALSE,,,

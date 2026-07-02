@@ -1,0 +1,12 @@
+TimerName,TimerColour,Alert,Vibration,IntervalShuffle,ReactionSessionRound,ReactionSessionRoundHundredths,ReactionIntervalDurationMin,ReactionIntervalDurationMinHundredths,ReactionIntervalDurationMax,ReactionIntervalDurationMaxHundredths,RestBetweenIntervalsMin,RestBetweenIntervalsMinHundredths,RestBetweenIntervalsMax,RestBetweenIntervalsMaxHundredths,NumberOfRounds,RestBetweenRoundsMin,RestBetweenRoundsMinHundredths,RestBetweenRoundsMax,RestBetweenRoundsMaxHundredths,CallName,CallColour,ReactionMaxNumberOfCalls,CallDurationMin,CallDurationMinHundredths,CallDurationMax,CallDurationMaxHundredths,HalfWayAlert,MessageText,MessageDelay,MessageDelayHundredths
+Beginner Bag Work (Martial Arts/Boxing),#67FBD7,Without Count,,TRUE,0:02:00,,0:00:03,,0:00:10,,,,,,4,0:01:00,,,,Jab,#1886EC,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,"Jab, Cross",#4CFAD0,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,Double Jab,#148B76,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,"Double Jab, Cross",#8B1414,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,"Jab, Rear Uppercut",#49148B,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,"Jab, Cross, Lead Hook",#FA4C4C,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,"Jab, Rear Uppercut, Lead Hook",#8B1414,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,"Double Jab, Cross, Slip, Cross",#FA4CAA,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,"Jab, Cross, Lead Hook, Slip, Lead Uppercut",#FF9800,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,"Jab, Cross, Lead Hook, Cross",#FAE84C,,,,,,FALSE,,,
+,,,,,,,,,,,,,,,,,,,,"Jab, Rear Uppercut, Lead Hook, Cross",#BDF1FF,,,,,,FALSE,,,
